@@ -16,7 +16,7 @@
     {
       overlay = final: prev: {
         foo = import ./derivations/foo.nix { pkgs = final; };
-        bar = import ./derivations/foo.nix { pkgs = final; };
+        bar = import ./derivations/bar.nix { pkgs = final; };
       };
 
     } // eachSystem defaultSystems (system:
